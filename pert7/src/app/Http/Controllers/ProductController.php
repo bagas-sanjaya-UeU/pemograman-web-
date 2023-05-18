@@ -40,7 +40,7 @@ class ProductController extends Controller
 
         Product::create($dataproduk);
 
-        return redirect()->route('product')->with('success', 'Product berhasil ditambahkan');
+        return redirect()->route('product.create')->with('success', 'Product berhasil ditambahkan');
     }
 
     /**
